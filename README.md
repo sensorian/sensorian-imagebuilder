@@ -13,3 +13,11 @@ and modify the program to use your network's apt-caching proxy, if it exists.
  Save the file and exit the editor.
 4. Make the file executable. chmod +x build\_rpi.sh
 5. Run the build script. ./build\_rpi.sh
+
+Pre-Built Images
+----------------
+
+Download pre-built images built with these scripts for
+[Raspberry Pi 1](https://drive.google.com/file/d/0B7xb\_sonUfKtQy1CZ0Z4LTNVTEU/view?usp=sharing)
+and [Raspberry Pi 2](https://drive.google.com/file/d/0B7xb_sonUfKtekJWclhLa1JocXM/view?usp=sharing)
+
