@@ -1,0 +1,29 @@
+# sha256: TIOCn_g9QIteHUmVRyJlQR0sQUESKY8utLNZ2eRWM3M
+Flask==0.10.1
+
+# sha256: LiSsXQBNtXFJdqBKwOgMbfbkfpjDVMssDYL4h51Pj9s
+Jinja2==2.7.3
+
+# sha256: nSdx5Mib4Se8S6wFarfOrw4AZMcj1rbhlXOcOvT9XB0
+Werkzeug==0.10.4
+
+# sha256: y7P8-NPjPfhhcJ7K-J2eZinP8KIXvChI8bQc0w02BRk
+itsdangerous==0.24
+
+# sha256: 3169SJ3AkUwiRBnaBZ2ZHrcpiKAc3UuVbVKTLOfVAf8
+Flask-BasicAuth==0.2.0
+
+# sha256: Fngsv23wh72wsId-C67puGTSB9r_TQ348QNjUeR5qZw
+flask-lesscss==0.9.1
+
+# sha256: pOwa_1m5WhS0XrLiN2GgF56YMZ2lp-t2tW6ozce4ccM
+MarkupSafe==0.23
+
+# sha256: vZkxbJftHRy5C48MJCyGQgqJGmogWPIHF-Qkv1sLuA4
+Flask-WTF==0.12
+
+# sha256: rz7Iv1DyV39iQHsf8cC-PV2tzcPOC6L47qFeZH_ytR4
+spidev==3.0
+
+# sha256: Og6aPHkHIqpIgpggkOaFRsf5NS61NQJrBs6tlllo82w
+IMAPClient==0.13
