@@ -21,3 +21,17 @@ Download pre-built images built with these scripts for
 [Raspberry Pi 1](https://drive.google.com/file/d/0B7xb\_sonUfKtQy1CZ0Z4LTNVTEU/view?usp=sharing)
 and [Raspberry Pi 2](https://drive.google.com/file/d/0B7xb_sonUfKtekJWclhLa1JocXM/view?usp=sharing)
 
+Advisories
+----------
+
+* By default, the built image uses an apt-caching proxy at `192.168.137.3:3128`.
+If you do not have this on your network and want to download packages directly, remove
+`/etc/apt/apt.conf` by running `sudo rm /etc/apt/apt.conf`. This should resolve any
+apt-get errors.
+
+* The default password for the user `pi` is `raspberry`. If working in an untrusted
+environment it is recommended that you change it by running `sudo passwd pi`.
+
+* The default ssh host key is not unique and it is recommended that you change it
+if working in an untrusted environment. To do so run `sudo rm /etc/ssh/ssh_host_*`.
+Then run `sudo dpkg-reconfigure openssh-server`. 
