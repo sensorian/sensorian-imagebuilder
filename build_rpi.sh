@@ -44,7 +44,6 @@ sudo apt-get -y install i2c-tools || { echo "Failed to install i2c-tools" && exi
 sudo apt-get -y install libi2c-dev || { echo "Failed to install libi2c-dev" && exit; }
 sudo apt-get -y install python-smbus || { echo  "Failed to install python-smbus" && exit; }
 sudo apt-get -y install python-pkg-resources || { echo "Failed to install python-pkg-resources" && exit; }
-sudo apt-get -y install python-pip || { echo "Failed to install python-pip" && exit; }
 sudo apt-get -y install libjpeg-dev || { echo "Failed to install libjpeg-dev" && exit; }
 
 #Uninstall Python Imaging Library because it leaks and doesn't play well with Pillow
