@@ -137,9 +137,9 @@ cd ~/Sensorian
 cp -p Drivers_Python/PythonSharedObjectSrc/MPL3115A2/libMPL.so Apps_Python/P03-Barometer/libMPL.so
 cp -p Drivers_Python/PythonSharedObjectSrc/MPL3115A2/libMPL.so Apps_Python/P06-FlaskSensors/dashboard/libMPL.so
 
-cp -p PythonSharedObjectSrc/FXOS8700CQR1/libFXO.so Apps_Python/P07-Dynamic\ Photo\ Frame/libFXO.so
+cp -p Drivers_Python/PythonSharedObjectSrc/FXOS8700CQR1/libFXO.so Apps_Python/P07-Dynamic\ Photo\ Frame/libFXO.so
 
-cp -p PythonSharedObjectSrc/CAP1203/libCAP.so Apps_Python/P04-CapacitiveTouch/libCAP.so
+cp -p Drivers_Python/PythonSharedObjectSrc/CAP1203/libCAP.so Apps_Python/P04-CapacitiveTouch/libCAP.so
 
 cp -p Handler_Scratch/utilities/i2c-devices-interface/libsensorian.so Handler_Scratch/libsensorian.so
 cp -p Handler_Scratch/utilities/i2c-devices-interface/libsensorian.so Handler_NodeRED/libsensorian.so
