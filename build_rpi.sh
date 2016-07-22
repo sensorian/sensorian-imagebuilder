@@ -43,14 +43,15 @@ sudo apt-get -y install python-dev || { echo "Failed to install python-dev" && e
 sudo apt-get -y install i2c-tools || { echo "Failed to install i2c-tools" && exit; }
 sudo apt-get -y install libi2c-dev || { echo "Failed to install libi2c-dev" && exit; }
 sudo apt-get -y install python-smbus || { echo  "Failed to install python-smbus" && exit; }
-sudo apt-get -y install python-numpy || { echo "Failed to install python-numpy" && exit; } 
-sudo apt-get -y install python-imaging || { echo "Failed to install python-imaging" && exit; }
 sudo apt-get -y install python-pkg-resources || { echo "Failed to install python-pkg-resources" && exit; }
 sudo apt-get -y install python-pip || { echo "Failed to install python-pip" && exit; }
-sudo apt-get -y install python-wtforms || { echo "Failed to install python-wtforms" && exit; }
-sudo apt-get -y install sqlite3 || { echo "Failed to install sqlite3" && exit; }
-sudo apt-get -y install apache2 || { echo "Failed to install apache2" && exit; }
-sudo apt-get -y install libapache2-mod-wsgi || { echo "Failed to install libapache2-mod-wsgi" && exit; }
+
+#Uninstall Python Imaging Library because it leaks and doesn't play well with Pillow
+sudo apt-get -y purge python-pil || { echo "Failed to unins python-pil" && exit; }
+sudo apt-get -y purge python3-pil || { echo "Failed to uninstall python3-pil" && exit; }
+
+#Replace PIL with Pillow==2.9.0 which doesn't leak and doesn't weird-out like >=3.0.0
+sudo pip install Pillow==2.9.0
 
 #Use Peep to install PyPy packages as it is cryptographically secure
 # https://pypi.python.org/pypi/peep
