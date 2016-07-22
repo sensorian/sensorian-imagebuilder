@@ -1,14 +1,20 @@
 #Sensorian Firmware Requirements
-Flask==0.10.1 --hash=sha256:4c83829ff83d408b5e1d4995472265411d2c414112298f2eb4b359d9e4563373
-Jinja2==2.7.3 --hash=sha256:2e24ac5d004db5714976a04ac0e80c6df6e47e98c354cb2c0d82f8879d4f8fdb
-Werkzeug==0.10.4 --hash=sha256:a438aa8c3f513a5cf3dda02a62f9e022b7598e9fbfeba14ba2d6dd957c8ab436
+#Flask and dependencies
+Flask==0.11.1 --hash=sha256:4c83829ff83d408b5e1d4995472265411d2c414112298f2eb4b359d9e4563373
+Jinja2==2.8 --hash=sha256:2e24ac5d004db5714976a04ac0e80c6df6e47e98c354cb2c0d82f8879d4f8fdb
+Werkzeug==0.11.10 --hash=sha256:a438aa8c3f513a5cf3dda02a62f9e022b7598e9fbfeba14ba2d6dd957c8ab436
+click==6.6 --hash=sha256:cc6a19da8ebff6e7074f731447ef7e112bd23adf3de5c597cf9989f2fd8defe9
 itsdangerous==0.24 --hash=sha256:cbb3fcf8d3e33df861709ecaf89d9e6629cff0a217bc2848f1b41cd30d360519
-Flask-BasicAuth==0.2.0 --hash=sha256:df5ebd489dc0914c224419da059d991eb72988a01cdd4b956d52932ce7d501ff
-flask-lesscss==0.9.1 --hash=sha256:80544c9ea15c28d86bfd5201fa0e75755715e6841484e412f016975ac0e2214d
 MarkupSafe==0.23 --hash=sha256:a4ec1aff59b95a14b45eb2e23761a0179e98319da5a7eb76b56ea8cdc7b871c3
-Flask-WTF==0.12 --hash=sha256:99c5d75663d6bfcbf4dd0d71ffcb7313f64ae90e6f89e09ad99080107033e8b6
+#spidev
 spidev==3.0 --hash=sha256:af3ec8bf50f2577f62407b1ff1c0be3d5dadcdc3ce0ba2f8eea15e647ff2b51e
+#spidev==3.2 --hash=sha256:09d2b5122f0dd79910713a11f9a0020f71537224bf829916def4fffc0ea59456
+#RPi.GPIO==0.6.2 --hash=sha256:82acff0ef6bbe3cdf6f4dbdd73d96add5294bb94baf7f51c1d901861af3c2392
+
+#IMAPClient and dependencies
 IMAPClient==0.13 --hash=sha256:f47d0c69fcdc8602f62192849faf02c3394d06b7e0986ac3d9b2b59d7cc0511f
+
+#Pillow and dependencies
 #Replace PIL with Pillow==2.9.0 which doesn't leak and doesn't weird-out like >=3.0.0
 Pillow==2.9.0 --hash=sha256:d1db8dfed77547076037d589b598e04f2cbc1a7835d3d3f137bf20c8994854d5
 
@@ -17,4 +23,8 @@ requests==2.4.3 --hash=sha256:124890f41723c85aa82dfe0807432aea46d24aeb0dafce3409
 
 #Sensorian Hub Client Additional Requirements
 Flask-HTTPAuth==3.1.2 --hash=sha256:e54fc11a6ca872ff0784d9bb56461b32b6d82e3d568dfacc0a1d1a21023d1af6
+#Flask-RESTful and dependencies
 Flask-RESTful==0.3.5 --hash=sha256:7799326da016045bb6e67d6ff7be334303408b9dca39a68f0a2a4e54078f0389
+aniso8601==1.1.0 --hash=sha256:4fc462db59811f541bc25d865b86367153d8ce773ae75b16d54e2e1cd393b5cc
+six==1.10.0 --hash=sha256:0ff78c403d9bccf5a425a6d31a12aa6b47f1c21ca4dc2573a7e2f32a97335eb1
+#python-dateutil==2.5.3 --hash=sha256:598499a75be2e5e18a66f12c00dd47a069de24794effeda4228bfc760f44f527
