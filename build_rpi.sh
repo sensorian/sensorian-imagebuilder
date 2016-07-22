@@ -51,12 +51,16 @@ sudo apt-get -y install libjpeg-dev || { echo "Failed to install libjpeg-dev" &&
 sudo apt-get -y purge python-pil || { echo "Failed to unins python-pil" && exit; }
 sudo apt-get -y purge python3-pil || { echo "Failed to uninstall python3-pil" && exit; }
 
+#Update pip to the latest version to support hashing and more
+sudo pip install -U pip
+
 #Replace PIL with Pillow==2.9.0 which doesn't leak and doesn't weird-out like >=3.0.0
-sudo pip install Pillow==2.9.0
+sudo pip install Pillow==2.9.0 --hash=sha256: 9H0MafzchgL2IZKEn68CwzlNBrfgmGrD2bK1nX11111
 
 #Use Peep to install PyPy packages as it is cryptographically secure
 # https://pypi.python.org/pypi/peep
-sudo python peep.py install -r python_requirements.txt || { echo "peep install failed" && exit; }
+#sudo python peep.py install -r python_requirements.txt || { echo "peep install failed" && exit; }
+sudo pip install -r requirements.txt
 
 #Copy helper programs needed for Node-RED Sensorian Interface
 cd helper-programs
@@ -191,8 +195,8 @@ git clone https://github.com/sensorian/SensorianHubClient.git ~/SensorianHubClie
 chmod +x ~/SensorianHubClient/install.sh
 
 #Get additional requirements for Sensorian Hub Client
-sudo pip install Flask-HTTPAuth==3.1.2
-sudo pip install Flask-RESTful==0.3.5
+sudo pip install Flask-HTTPAuth==3.1.2 --hash=sha256: 9H0MafzchgL2IZKEn68CwzlNBrfgmGrD2bK1nX11111
+sudo pip install Flask-RESTful==0.3.5 --hash=sha256: 9H0MafzchgL2IZKEn68CwzlNBrfgmGrD2bK1nX11111
 
 #Compile Sensorian Hub Client
 cd ~/SensorianHubClient/PythonSharedObjectSrc
