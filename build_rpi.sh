@@ -211,7 +211,7 @@ cd ..
 cd $builddir
 
 #Add the IP demo to the crontab
-echo "@reboot /home/pi/Sensorian/Apps_C/P05-IP/IP" > mycron
+echo "@reboot cd /home/pi/SensorianHubClient && python ./Sensorian_Client.py" > mycron
 sudo crontab mycron
 
 #At this point, everything should be installed.
