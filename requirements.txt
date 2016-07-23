@@ -6,6 +6,9 @@ Werkzeug==0.11.10 --hash=sha256:f22b9762589decfde50149c7ee080713cbf6129b49ce2b39
 click==6.6 --hash=sha256:cc6a19da8ebff6e7074f731447ef7e112bd23adf3de5c597cf9989f2fd8defe9
 itsdangerous==0.24 --hash=sha256:cbb3fcf8d3e33df861709ecaf89d9e6629cff0a217bc2848f1b41cd30d360519
 MarkupSafe==0.23 --hash=sha256:a4ec1aff59b95a14b45eb2e23761a0179e98319da5a7eb76b56ea8cdc7b871c3
+#Flask-WTF and dependencies
+Flask-WTF==0.12 --hash=sha256:99c5d75663d6bfcbf4dd0d71ffcb7313f64ae90e6f89e09ad99080107033e8b6
+WTForms==2.1 --hash=sha256:ffdf10bd1fa565b8233380cb77a304cd36fd55c73023e91d4b803c96bc11d46f
 #spidev
 spidev==3.0 --hash=sha256:af3ec8bf50f2577f62407b1ff1c0be3d5dadcdc3ce0ba2f8eea15e647ff2b51e
 #spidev==3.2 --hash=sha256:09d2b5122f0dd79910713a11f9a0020f71537224bf829916def4fffc0ea59456
