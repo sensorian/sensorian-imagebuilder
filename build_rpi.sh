@@ -151,10 +151,6 @@ sudo sed -i 's/#dtparam=i2c_arm=on/dtparam=i2c_arm=on/g' /boot/config.txt
 sudo sed -i 's/#dtparam=spi=on/dtparam=spi=on/g' /boot/config.txt
 sudo sh -c 'echo i2c-dev >> /etc/modules'
 
-#Build the IP demo
-cd Apps_C/P05-IP
-make
-
 #Clone the latest version of the Sensorian Interface repository into SensorianInterface
 git clone https://github.com/sensorian/SensorianInterface.git ~/SensorianInterface
 chmod +x ~/SensorianInterface/C/install.sh
