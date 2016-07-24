@@ -4,10 +4,11 @@ Build scripts used for configuring a Raspbian OS image to work with Sensorian in
 Usage
 -----
 
-1. Create the ~/install\_from\_here directory on the Raspberry Pi.
-2. Copy all files from this repository into that directory.
-3. Make the file executable. chmod +x build\_rpi.sh
-4. Run the build script. ./build\_rpi.sh
+1. Install the latest Raspbian image to your Pi following [this official guide](https://www.raspberrypi.org/documentation/installation/installing-images/)
+2a. Once it is connected to the Internet, download this repository to a folder of your choice.
+2b. You can download it as a zip file or use `git clone https://github.com/sensorian/sensorian-imagebuilder.git`.
+3. Change to the download directory and make the build script executable. `chmod +x build_rpi.sh`
+4. Run the build script and reboot when completed! `./build_rpi.sh`
 
 Pre-Built Images
 ----------------
