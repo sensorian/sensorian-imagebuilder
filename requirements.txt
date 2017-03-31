@@ -10,9 +10,8 @@ MarkupSafe==0.23 --hash=sha256:a4ec1aff59b95a14b45eb2e23761a0179e98319da5a7eb76b
 Flask-WTF==0.12 --hash=sha256:99c5d75663d6bfcbf4dd0d71ffcb7313f64ae90e6f89e09ad99080107033e8b6
 WTForms==2.1 --hash=sha256:ffdf10bd1fa565b8233380cb77a304cd36fd55c73023e91d4b803c96bc11d46f
 #spidev
-spidev==3.0 --hash=sha256:af3ec8bf50f2577f62407b1ff1c0be3d5dadcdc3ce0ba2f8eea15e647ff2b51e
-#spidev==3.2 --hash=sha256:09d2b5122f0dd79910713a11f9a0020f71537224bf829916def4fffc0ea59456
-#RPi.GPIO==0.6.2 --hash=sha256:82acff0ef6bbe3cdf6f4dbdd73d96add5294bb94baf7f51c1d901861af3c2392
+spidev==3.2 --hash=sha256:09d2b5122f0dd79910713a11f9a0020f71537224bf829916def4fffc0ea59456
+RPi.GPIO==0.6.3 --hash=sha256:a5fc0eb5e401963b6c0a03650da6b42c4005f02d962b81241d96c98d0a578516
 
 #IMAPClient and dependencies
 IMAPClient==0.13 --hash=sha256:f47d0c69fcdc8602f62192849faf02c3394d06b7e0986ac3d9b2b59d7cc0511f
