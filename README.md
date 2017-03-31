@@ -6,7 +6,7 @@ Usage
 
 1. Install the latest Raspbian image to your Pi following [this official guide](https://www.raspberrypi.org/documentation/installation/installing-images/)
 2a. Once it is connected to the Internet, download this repository to a folder of your choice.
-2b. You can download it as a zip file or use `git clone https://github.com/sensorian/sensorian-imagebuilder.git`.
+2b. You can download it as a zip file or use `git clone https://github.com/sensorian/sensorian-imagebuilder.git -b Fixes --single-branch`.
 3. Change to the download directory and make the build script executable. `chmod +x build_rpi.sh`
 4. Run the build script and reboot when completed! `./build_rpi.sh`
 
